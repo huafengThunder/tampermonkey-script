@@ -25,7 +25,8 @@ function clickCompletelyDelete() {
         'Marius Gherasie',
         'CodePen',
         'Pelion',
-        'UCloud 云计算'
+        'UCloud 云计算',
+        'The brightonSEO and Hero Conf team'
     ]
     const targetUElements = document.querySelectorAll('.cx')
     const arr = Array.from(targetUElements);
@@ -40,7 +41,12 @@ function clickCompletelyDelete() {
     })
     document.querySelector('#quick_completelydel').click()
 }
-clickCompletelyDelete()
-setTimeout(() => {
-    top.document.querySelector('#QMconfirm_QMDialog_confirm').click()
-}, 600)
+
+function startDelete() {
+    clickCompletelyDelete()
+    setTimeout(() => {
+        top.document.querySelector('#QMconfirm_QMDialog_confirm').click()
+    }, 600)
+}
+
+startDelete();
